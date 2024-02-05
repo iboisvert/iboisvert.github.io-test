@@ -19,13 +19,13 @@ I'm trying to build a web app using Spring Boot.
 When I start the web app and enter `http://localhost:8080` into the address bar, I see this result:
 
 <div style="text-align:center">
-    <img alt="Tomcat returns error in response to http request at port 8080" src="/assets/it_is_almost_always_possible/tomcat-http.png"/>
+    <img alt="Tomcat returns error in response to http request at port 8080" src="{{ site.url }}/assets/it_is_almost_always_possible/tomcat-http.png"/>
 </div>
 
 What I expect to see is the default Thymeleaf landing page:
 
 <div style="text-align:center">
-    <img alt="Tomcat returns expected response to https request at port 8080" src="/assets/it_is_almost_always_possible/tomcat-https.png"/>
+    <img alt="Tomcat returns expected response to https request at port 8080" src="{{ site.url }}/assets/it_is_almost_always_possible/tomcat-https.png"/>
 </div>
 
 This is a terrible user experience (interestingly Jetty is worse, by default). I know I could redirect to a different port but 
@@ -37,13 +37,13 @@ look at how a browser makes a request to a web server.
 Here is the conversation between the browser and the web server when I enter `http://info.cern.ch` into the address bar.
 
 <div style="text-align:center">
-    <img alt="Packet exchange between browser and info.cern.ch for http request" src="/assets/it_is_almost_always_possible/info.cern.ch-http.png"/>
+    <img alt="Packet exchange between browser and info.cern.ch for http request" src="{{ site.url }}/assets/it_is_almost_always_possible/info.cern.ch-http.png"/>
 </div>
 
 And here is the conversation between the browser and the web server when I enter `https://info.cern.ch` into the address bar.
 
 <div style="text-align:center">
-    <img alt="Packet exchange between browser and info.cern.ch for https request" src="/assets/it_is_almost_always_possible/info.cern.ch-https.png"/>
+    <img alt="Packet exchange between browser and info.cern.ch for https request" src="{{ site.url }}/assets/it_is_almost_always_possible/info.cern.ch-https.png"/>
 </div>
 
 Now these conversations are obviously different, but the first few messages are the same: they establish a TCP connection to a server.
